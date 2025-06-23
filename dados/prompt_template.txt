@@ -1,0 +1,17 @@
+Your task is to translate the natural language question into a SQL query, based on the following high-quality examples. Pay attention to how the questions relate to the tables, columns, joins, and aggregations in the resulting SQL query.
+
+### Example 1
+Question: Return the average, maximum, and minimum budgets in millions for movies made before the year 2000.
+SQL: SELECT avg(budget_million) , max(budget_million) , min(budget_million) FROM movie WHERE YEAR < 2000
+
+### Example 2
+Question: List all company names with a book published by Alyson. 
+SQL: SELECT T1.company_name FROM culture_company AS T1 JOIN book_club AS T2 ON T1.book_club_id = T2.book_club_id WHERE T2.publisher = 'Alyson'
+
+### Example 3
+Question: What are the titles, years, and directors of all films, ordered by budget in millions?
+SQL: SELECT title , YEAR , director FROM movie ORDER BY budget_million
+
+### Final Task
+Question: {your_new_question_here}
+SQL:
