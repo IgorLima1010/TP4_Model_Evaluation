@@ -9,7 +9,7 @@ Este projeto investiga o trade-off entre ganho de performance e regressão de ca
 Para executar este projeto, os arquivos devem estar organizados da seguinte forma:
 
 ```
-/MESTRADO/
+/SUA PASTA/
 ├── database/               # Pasta com os bancos de dados do Spider (do database.zip)
 ├── lora_model_version1/    # Adaptador do Modelo 1 (gerado pelo fine-tuning)
 ├── lora_model_version2/    # Adaptador do Modelo 2 (gerado pelo fine-tuning)
@@ -42,7 +42,7 @@ Todo o ambiente de software pode ser configurado a partir do arquivo `requiremen
 
 1.  **Crie e ative um novo ambiente Conda:**
     ```bash
-    conda create -n llm_evaluate python=3.11 -y
+    conda create -n llm_evaluate -y
     conda activate llm_evaluate
     ```
 
